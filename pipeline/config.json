@@ -1,0 +1,32 @@
+{
+  "_note": "All assumptions live here so a reviewer can change them and rerun. See docs/TECHNICAL_NOTE.md.",
+  "bin_minutes": 30,
+  "min_tickets_per_route": 200,
+  "_scale_note": "E-tickets are ~3-4% of all bus tickets (Problem 3 brief) => x25 to x33. Women ride free (pink pass) and pass holders are unseen, so the upper bound is raised to x45. mid = x33.",
+  "scale_low": 25,
+  "scale_mid": 33,
+  "scale_high": 45,
+  "default_buses_per_bin": 2,
+  "seats_per_bus": 35,
+  "_level_note": "load / seats: <0.8 seats likely, <1.0 few seats, <1.8 standing room, above that packed (12 m bus ~35 seated, ~65-70 total).",
+  "level_cuts": [
+    0.8,
+    1.0,
+    1.8
+  ],
+  "conf_high_tickets": 60,
+  "conf_med_tickets": 15,
+  "conf_min_tickets": 5,
+  "_conf_note": "high: >=60 tickets, or >=15 and the level is the same across the 90% sampling interval; medium: >=15, or >=5 and level stable. Thin cells (<15 tickets) are pooled with the neighbouring half-hours (0.25/0.5/0.25).",
+  "_capacity_note": "12 m standard bus: 35 seats, ~70 crush. 9 m DEVI e-bus (routes starting 'D-'): 25 seats, ~45 crush. Per-route scale is capped so the route's weekday p95 load cannot exceed crush capacity: e-ticket share varies by route (new e-buses have far higher QR use).",
+  "bus_12m": {
+    "seats": 35,
+    "crush": 70
+  },
+  "bus_9m": {
+    "seats": 25,
+    "crush": 45
+  },
+  "nine_metre_route_regex": "^D-",
+  "route_cap_quantile": 0.95
+}

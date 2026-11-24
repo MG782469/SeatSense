@@ -1,0 +1,280 @@
+{
+  "tickets": 2559796,
+  "passengers": 2753498,
+  "routes_ordered": 1238,
+  "median_order_consistency": 1.0,
+  "days": {
+    "weekday": 22,
+    "weekend": 9
+  },
+  "vehicle_id_share": 0.515,
+  "week_to_week_corr_route_bin": {
+    "41-42": 0.934,
+    "42-43": 0.939,
+    "43-44": 0.943
+  },
+  "segments": 2419663,
+  "confidence_share": {
+    "medium": 0.392,
+    "high": 0.322,
+    "low": 0.286
+  },
+  "confidence_share_rider_weighted": {
+    "high": 0.662,
+    "low": 0.047,
+    "medium": 0.291
+  },
+  "confidence_share_daytime_6_22": {
+    "medium": 0.391,
+    "high": 0.338,
+    "low": 0.271
+  },
+  "smoothed_cells_share": 0.767,
+  "scale": {
+    "low": 25,
+    "mid": 33,
+    "high": 45
+  },
+  "routes_scale_capped_share": 0.082,
+  "segments_demand_over_capacity_weekday_peak": 5936,
+  "level_share_weekday_peak": {
+    "seats": 0.843,
+    "standing": 0.08,
+    "few_seats": 0.053,
+    "packed": 0.024
+  },
+  "level_share_weekday_peak_rider_weighted": {
+    "few_seats": 0.104,
+    "packed": 0.112,
+    "seats": 0.557,
+    "standing": 0.227
+  },
+  "buses_in_service_citywide_weekday": {
+    "06:00": 1002,
+    "08:30": 3559,
+    "12:00": 4220,
+    "18:30": 3729,
+    "22:00": 1191
+  },
+  "vehicles_seen_per_weekday": 6023,
+  "geo": {
+    "routes_found_in_gtfs": 914,
+    "routes": 1238,
+    "route_stop_slots": 52641,
+    "slots_route": 17843,
+    "slots_global": 18904,
+    "slots_interp": 12315,
+    "slots_none": 3579,
+    "stop_names_with_coords": 6398,
+    "stop_names": 6724,
+    "method_share": {
+      "route": 0.57,
+      "global": 0.251,
+      "interp": 0.178
+    },
+    "quality": {
+      "placed_share": 0.932,
+      "long_hop_share": 0.0069,
+      "spikes": 232,
+      "spike_share": 0.0049,
+      "before_alignment": {
+        "placed_share": 0.911,
+        "long_hop_share": 0.011,
+        "spikes": 1782
+      }
+    }
+  },
+  "gtfs_check": {
+    "trip_time": {
+      "route_hours_compared": 12087,
+      "routes_compared": 906,
+      "median_ratio_model_to_schedule": 0.93,
+      "share_within_25pct": 0.586,
+      "share_within_50pct": 0.884,
+      "corr_route_hour": 0.546,
+      "by_hour": {
+        "0": {
+          "model": 91.0,
+          "schedule": 99.2
+        },
+        "1": {
+          "model": 71.1,
+          "schedule": 93.2
+        },
+        "2": {
+          "model": 71.7,
+          "schedule": 107.0
+        },
+        "3": {
+          "model": 89.7,
+          "schedule": 103.4
+        },
+        "4": {
+          "model": 100.3,
+          "schedule": 111.1
+        },
+        "5": {
+          "model": 89.7,
+          "schedule": 102.5
+        },
+        "6": {
+          "model": 83.8,
+          "schedule": 99.3
+        },
+        "7": {
+          "model": 82.5,
+          "schedule": 98.0
+        },
+        "8": {
+          "model": 81.8,
+          "schedule": 98.8
+        },
+        "9": {
+          "model": 87.8,
+          "schedule": 98.4
+        },
+        "10": {
+          "model": 92.9,
+          "schedule": 98.1
+        },
+        "11": {
+          "model": 93.4,
+          "schedule": 97.3
+        },
+        "12": {
+          "model": 94.6,
+          "schedule": 98.0
+        },
+        "13": {
+          "model": 95.4,
+          "schedule": 98.7
+        },
+        "14": {
+          "model": 94.8,
+          "schedule": 99.2
+        },
+        "15": {
+          "model": 92.8,
+          "schedule": 98.5
+        },
+        "16": {
+          "model": 94.2,
+          "schedule": 98.5
+        },
+        "17": {
+          "model": 95.9,
+          "schedule": 98.5
+        },
+        "18": {
+          "model": 104.3,
+          "schedule": 98.1
+        },
+        "19": {
+          "model": 104.0,
+          "schedule": 97.8
+        },
+        "20": {
+          "model": 96.9,
+          "schedule": 97.7
+        },
+        "21": {
+          "model": 87.4,
+          "schedule": 95.9
+        },
+        "22": {
+          "model": 87.5,
+          "schedule": 99.3
+        },
+        "23": {
+          "model": 89.2,
+          "schedule": 95.5
+        }
+      }
+    },
+    "buses_in_service": {
+      "route_bins_compared": 22753,
+      "routes_compared": 902,
+      "median_ratio_model_to_schedule": 0.61,
+      "corr_across_routes_typical_fleet": 0.672,
+      "median_within_route_corr_through_day": 0.146
+    },
+    "note": "Latest public GTFS timetable (calendar 2022-24; a plan, not observed runs); tickets Oct 2026. Routes matched by id."
+  },
+  "split_half_agreement_by_confidence": {
+    "high": {
+      "cells": 758687,
+      "same_level": 0.955,
+      "within_one_level": 0.993,
+      "busy_cells": 56298,
+      "busy_same_level": 0.571
+    },
+    "low": {
+      "cells": 607881,
+      "same_level": 0.986,
+      "within_one_level": 0.997,
+      "busy_cells": 1532,
+      "busy_same_level": 0.156
+    },
+    "medium": {
+      "cells": 877844,
+      "same_level": 0.893,
+      "within_one_level": 0.965,
+      "busy_cells": 92259,
+      "busy_same_level": 0.345
+    }
+  },
+  "planner_check": {
+    "pairs": 400,
+    "seed": 7,
+    "depart": "08:30",
+    "day": "weekday",
+    "found_share": 1.0,
+    "found_share_without_walks_or_second_change": 0.68,
+    "share_using_a_walk": 0.993,
+    "share_offering_two_changes": 0.345,
+    "door_to_door_kmh_median": 12.9,
+    "door_to_door_kmh_p90": 18.9,
+    "share_faster_than_30kmh": 0.005,
+    "seconds_per_plan": 0.055,
+    "stop_places": 12696,
+    "names_at_several_places": 2735,
+    "second_places_used_by_5plus_route_stops": 254
+  },
+  "external_check": {
+    "eticket_passengers_per_day": 88823,
+    "model_daily_riders_lakh": {
+      "low": 22.2,
+      "mid": 29.3,
+      "high": 40.0
+    },
+    "published_daily_riders_lakh": {
+      "DTC 2025-26": 24.29,
+      "DTC + cluster FY2024-25": 40.8
+    },
+    "published_range_inside_model_range": true,
+    "implied_scale": [
+      27.3,
+      45.9
+    ],
+    "implied_eticket_share_pct": [
+      2.18,
+      3.66
+    ],
+    "vehicles_seen_per_weekday": 6023,
+    "published_fleet": {
+      "March 2026": 6100,
+      "April 2026": 6300
+    },
+    "share_of_fleet_seen_pct": [
+      96,
+      99
+    ],
+    "sources": [
+      "https://www.newsbytesapp.com/news/auto/economic-survey-2025-26-finds-delhi-bus-ridership-down-nearly-20/story",
+      "https://ackodrive.com/news/delhi-s-dtc-bus-fleet-hits-13-year-low-as-daily-ridership-falls-44/",
+      "https://thewire.in/economy/service-sector-transport-water-highlights-of-delhis-economic-survey-2025-26",
+      "https://www.electrive.com/2026/04/20/india-delhi-transport-corporation-flags-off-200-electric-buses/"
+    ],
+    "note": "Published figures conflict slightly by year and scope (DTC only vs DTC + cluster), so both ends are kept."
+  }
+}

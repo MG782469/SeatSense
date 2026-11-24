@@ -1,0 +1,8 @@
+# raw and generated data are large; rebuild with the pipeline (see README)
+data/raw/
+data/processed/*.pkl
+data/processed/pipeline_log.txt
+__pycache__/
+*.pyc
+.claude/
+.pytest_cache/

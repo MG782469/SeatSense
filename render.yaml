@@ -1,0 +1,9 @@
+# One-click deploy on Render (Blueprint): New + -> Blueprint -> pick this repo.
+# The app needs ~160 MB RAM, so the free plan is enough. It sleeps when idle; the first request then takes ~30 s.
+services:
+  - type: web
+    name: seatsense
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
